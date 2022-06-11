@@ -34,9 +34,8 @@ mongoose.connect(process.env.MONGO_URL,
 //   }
 // })
 
-app.use('/',(req,res)=>{
-    res.send("working");
-})
+
+
 // main entrypoint
 app.post("/evaluate",async(req,res)=>{
     const db= await Example.findOne();
